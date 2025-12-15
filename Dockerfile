@@ -1,7 +1,7 @@
 # ========================================
 # FILE: Dockerfile (REPLACE ENTIRE FILE)
 # ========================================
-FROM php:8.3-fpm-alpine AS builder
+FROM php:8.4-fpm-alpine AS builder
 
 WORKDIR /app
 
@@ -47,12 +47,12 @@ RUN npm prune --production
 
 
 # PHP Production Image
-FROM php:8.3-fpm-alpine
+FROM php:8.4-fpm-alpine
 
 # Set working directory
 WORKDIR /var/www/html
 
-# Install system dependencies and PHP extensions
+# Install syste and PHP extensions
 RUN apk add --no-cache \
     nginx \
     supervisor \
