@@ -6,7 +6,7 @@ A modern, production-ready Laravel application with React frontend, containerize
 
 This application uses a multi-service Docker architecture:
 
-- **Laravel 12** backend with PHP 8.3-FPM
+- **Laravel 12** backend with PHP 8.4-FPM
 - **React 19** frontend with TypeScript and Tailwind CSS
 - **Inertia.js** for seamless SPA experience
 - **Nginx** web server with optimized configuration
@@ -54,7 +54,7 @@ This application uses a multi-service Docker architecture:
 ## 🐳 Docker Services
 
 ### Application Container (`app`)
-- **Base Image:** PHP 8.3-FPM Alpine
+- **Base Image:** PHP 8.4-FPM Alpine
 - **Port:** 80 (mapped to host 8000)
 - **Features:**
   - Multi-stage build for optimization
